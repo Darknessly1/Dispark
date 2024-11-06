@@ -26,6 +26,10 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     </head>
 
     <body>
@@ -56,18 +60,19 @@
         <!-- Topbar End -->
 
         <!-- Navbar Start -->
-        <div class="container-fluid bg-primary">
+        <div class="bg-green-700">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block">DIS<span class="text-secondary">PARK</span> </h1>
+                        <h1 class="text-white text-6xl fw-bold d-block">DIS<span class="text-dark">PARK</span> </h1>
                     </a>
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="collapse  navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
                             <a href="about.html" class="nav-item nav-link active">About</a>
                             <a href="service.html" class="nav-item nav-link">Services</a>
                             <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -94,7 +99,7 @@
                         </div>
                         <div class="d-flex flex-column pe-4 border-end">
                             <span class="text-white-50">Have any questions?</span>
-                            <span class="text-secondary">Call: + 0123 456 7890</span>
+                            <span class="text-secondary">Call: +212 6 66 66 66 66</span>
                         </div>
                         <div class="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
@@ -125,7 +130,7 @@
         <!-- Fact Start -->
         <div class="container-fluid bg-secondary py-5">
             <div class="container">
-                <div class="row">
+                <div class="row text-xl">
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
                         <div class="d-flex counter">
                             <h1 class="me-3 text-primary counter-value">99</h1>
@@ -162,15 +167,15 @@
                 <div class="row g-5">
                     <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="h-100 position-relative">
-                            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                            <img src="img/img1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                             <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/img2.jpg" class="img-fluid w-100 rounded" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">About Us</h5>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
+                        <h5 class="text-primary text-3xl">About Us</h5>
+                        <h1 class="mb-4 text-xl">About HighTech Agency And It's Innovative IT Solutions</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
                         <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
                         <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
@@ -185,8 +190,8 @@
         <div class="container-fluid pb-5 mb-5 team">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Team</h5>
-                    <h1>Meet our expert Team</h1>
+                    <h5 class="text-primary text-3xl">Our Team</h5>
+                    <h1 class="text-xl">Meet our expert Team</h1>
                 </div>
                 <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="rounded team-item">
@@ -318,7 +323,13 @@
                 </div>
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
-                   
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="#" class="text-secondary"><i
+                                    class="fas fa-copyright text-secondary me-2"></i>DISPARK</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+
+                    </div>
                 </div>
             </div>
         </div>

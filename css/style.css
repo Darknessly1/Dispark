@@ -222,16 +222,19 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    background: var(--bs-secondary);
-    color: var(--bs-dark);
+    /* background: var(--bs-secondary); */
+    background: black;
+    /* color: var(--bs-dark); */
+    color: white;
     opacity: 1;
     border: 0;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    background: var(--bs-primary);
-    color: #ffffff;
+    /* background: var(--bs-primary); */
+    background: rgb(76, 187, 61);
+    color: #000000;
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -308,7 +311,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/img1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -345,7 +348,8 @@
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
+    /* background: rgba(0, 42, 255, 0.8); */
+    background: #42bb5c;
     transition: .5s;
 }
 
@@ -372,7 +376,8 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important;
+    /* color: var(--bs-primary) !important; */
+    color: #b2ebd4;
 }
 
 .services-item:hover .services-content-icon p {
@@ -396,7 +401,8 @@
     height: 150px;
     top: 0;
     left: 0;
-    background: var(--bs-secondary);
+    /* background: var(--bs-secondary); */
+    background: #c1dad0;
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -410,7 +416,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background: var(--bs-primary);
+    /* background: var(--bs-primary); */
+    background: #60b18f;
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -432,7 +439,8 @@
 .project-content a {
     display: inline-block;
     padding: 20px 25px;
-    background: var(--bs-primary);
+    /* background: var(--bs-primary); */
+    background: #6c8179;
     border-radius: 10px;
 }
 
