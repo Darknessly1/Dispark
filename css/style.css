@@ -181,6 +181,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    margin-top: 50px;
 }
 
 .carousel-item p {
@@ -233,7 +234,7 @@
     color: #ffffff;
     border: 0;
     opacity: 1;
-    transition: 8s;
+    transition: 1s;
     border-radius: 20px;
 }
 
