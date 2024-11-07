@@ -11,6 +11,16 @@
     color: rgb(201, 130, 0);
 }
 
+.imgd {
+    border-radius: 20px;
+    height: 500px;
+    width: 100%; /* You can adjust this based on your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #6c8179;
+}
+
 
 
 /*** Spinner Start ***/
@@ -422,7 +432,7 @@
     top: 0;
     left: 0;
     /* background: var(--bs-secondary); */
-    background: #c1dad0;
+    background: #dfd3c0;
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -437,7 +447,7 @@
     right: 0;
     bottom: 0;
     /* background: var(--bs-primary); */
-    background: #60b18f;
+    background: #eba817;
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -460,7 +470,7 @@
     display: inline-block;
     padding: 20px 25px;
     /* background: var(--bs-primary); */
-    background: #6c8179;
+    background: #745911;
     border-radius: 10px;
 }
 
