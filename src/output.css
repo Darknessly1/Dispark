@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.testbg{
+  color: rgb(230, 154, 15);
+}
+
+.testbg1{
+  color: rgb(201, 130, 0);
+}
+
 /*** Spinner Start ***/
 
 #spinner {
@@ -664,18 +672,21 @@ video {
 
 .navbar .navbar-nav {
   padding: 15px 0;
+  color: black;
 }
 
 .navbar .navbar-nav .nav-link {
   padding: 10px;
-  color: var(--bs-white);
+  color: var(--bs-dark);
   font-size: 18px;
   outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--bs-secondary) !important;
+  color: rgb(255, 166, 0) !important;
+  /* color: rgb(197, 146, 51) !important; */
+  /* color: orange; */
 }
 
 .navbar .dropdown-toggle::after {
@@ -744,13 +755,15 @@ video {
   position: absolute;
   top: 50%;
   left: 0;
-  background: var(--bs-primary);
+  /* background: var(--bs-secondary); */
+  background: black;
   border-radius: 0 50px 50px 0;
   opacity: 1;
 }
 
 .carousel-control-prev:hover {
-  background: var(--bs-secondary);
+  /* background: var(--bs-secondary); */
+  background: orange;
   transition: .8s;
 }
 
@@ -760,13 +773,15 @@ video {
   position: absolute;
   top: 50%;
   right: 0;
-  background: var(--bs-primary);
+  /* background: var(--bs-primary); */
+  background: black;
   border-radius: 50px 0 0 50px;
   opacity: 1;
 }
 
 .carousel-control-next:hover {
-  background: var(--bs-secondary);
+  /* background: var(--bs-secondary); */
+  background: orange;
   transition: .8s;
 }
 
@@ -782,7 +797,7 @@ video {
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
   /* background: var(--bs-primary); */
-  background: rgb(76, 187, 61);
+  background: orange;
   color: #000000;
   border: 0;
   opacity: 1;
@@ -791,7 +806,8 @@ video {
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-  background: var(--bs-primary);
+  /* background: var(--bs-primary); */
+  background: orange;
   color: var(--bs-white);
   opacity: 1;
   border: 0;
@@ -799,27 +815,28 @@ video {
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-  background: var(--bs-secondary);
-  color: var(--bs-dark);
+  /* background: var(--bs-secondary); */
+  background: black;
+  color: var(--bs-white);
   border: 0;
   opacity: 1;
   transition: 1s;
   border-radius: 20px;
 }
 
-#carouselId .carousel-indicators li {
-  width: 30px;
-  height: 10px;
-  background: var(--bs-primary);
-  margin: 10px;
-  border-radius: 30px;
-  opacity: 1;
+/* #carouselId .carousel-indicators li {
+    width: 30px;
+    height: 10px;
+    background: var(--bs-primary);
+    margin: 10px;
+    border-radius: 30px;
+    opacity: 1;
 }
 
 #carouselId .carousel-indicators li:hover {
-  background: var(--bs-secondary);
-  opacity: 1;
-}
+    background: var(--bs-secondary);
+    opacity: 1;
+} */
 
 @media (max-width: 992px) {
   .carousel-item {
@@ -897,7 +914,7 @@ video {
   left: 0;
   border-radius: 10px 10px 0 0;
   /* background: rgba(0, 42, 255, 0.8); */
-  background: #42bb5c;
+  background: #c9791e;
   transition: .5s;
   top: 0;
   bottom: auto;
@@ -922,7 +939,7 @@ video {
 
 .services-item:hover .services-content-icon i {
   /* color: var(--bs-primary) !important; */
-  color: #b2ebd4;
+  color: #ebceb2;
 }
 
 .services-item:hover .services-content-icon p {
@@ -1002,14 +1019,17 @@ video {
 
 /*** Blog Start ***/
 
-.blog-item .blog-btn {
+.blog-item 
+.blog-btn {
   z-index: 2;
+  /* background: #c9791e; */
 }
 
 .blog-btn .blog-btn-icon {
   height: 50px;
   position: relative;
   overflow: hidden;
+  /* background-color: #c9791e; */
 }
 
 .blog-btn-icon .blog-icon-2 {

@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGreen: '#60b18f', // Define your custom color here
+        customGreen: '#60b18f',
+        orange: {
+          600: '#fb923c',
+        },
       },
     },
   },
