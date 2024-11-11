@@ -18,14 +18,12 @@
 .imgd {
     border-radius: 20px;
     height: 500px;
-    width: 100%; /* You can adjust this based on your preference */
+    width: 600%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: #6c8179;
 }
-
-
 
 
 .partners {
@@ -332,19 +330,21 @@
     border-radius: 20px;
 }
 
-/* #carouselId .carousel-indicators li {
+#carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background: var(--bs-primary);
+    /* background: var(--bs-primary); */
+    background: black;
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
+    /* background: var(--bs-secondary); */
+    background: gray;
     opacity: 1;
-} */
+}
 
 @media (max-width: 992px) {
     .carousel-item {
