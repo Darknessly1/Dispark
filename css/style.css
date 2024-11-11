@@ -3,6 +3,82 @@
 @tailwind utilities;
 
 
+
+/* 1 */
+.h1-container {
+    display: flex;
+    align-items: center; /* Center vertically if needed */
+    justify-content: center; /* Center horizontally */
+    gap: 20px; /* Space between elements */
+}
+
+.changing{
+    margin-right: 100vh;
+    margin-bottom: 70vh;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.sub-changing3{
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+    white-space: nowrap;
+}
+
+.split-text1 span{
+    position: absolute;
+    display: block; 
+    width: 100%;
+}
+
+
+
+/* 3 */
+.changing1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    white-space: nowrap;
+}
+
+
+
+
+/* 4 */
+.changing2{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    white-space: nowrap;
+}
+
+.sub-changing2{
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+    white-space: nowrap;
+}
+
+.split-text span {
+    display: block; /* Places each span on a new line */
+    width: 100%;    /* Ensures each span takes full width of the parent */
+}
+
+
+
+
+.sub-changing{
+    white-space: nowrap;
+    margin-right: 80vh;
+}
+
+
+
+
+
+
 .testbg{
     color: rgb(145, 141, 136) !important;
 }
@@ -330,21 +406,21 @@
     border-radius: 20px;
 }
 
-#carouselId .carousel-indicators li {
+/* #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    /* background: var(--bs-primary); */
+    background: var(--bs-primary);
     background: black;
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
-}
+} */
 
-#carouselId .carousel-indicators li:hover {
-    /* background: var(--bs-secondary); */
+/* #carouselId .carousel-indicators li:hover {
+    background: var(--bs-secondary);
     background: gray;
     opacity: 1;
-}
+} */
 
 @media (max-width: 992px) {
     .carousel-item {
