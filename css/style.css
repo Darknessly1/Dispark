@@ -6,31 +6,52 @@
 
 /* 1 */
 .h1-container {
-    display: flex;
-    align-items: center; /* Center vertically if needed */
-    justify-content: center; /* Center horizontally */
-    gap: 20px; /* Space between elements */
+    position: absolute;
+    top: 20%; /* Position h1 at 20% from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center h1 horizontally */
 }
 
 .changing{
     margin-right: 100vh;
-    margin-bottom: 70vh;
+    /* margin-bottom: 20%; */
+    /* bottom: 60%; */
+    /* top: 90%; */
+    margin-bottom: 40%;
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
 
-.sub-changing3{
+.sub-changing3 {
     position: absolute;
     bottom: 10%;
-    right: 40%;
+    right: 5%; /* Adjust right value as needed */
     white-space: nowrap;
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: column; /* Stack the paragraph and buttons vertically */
+    align-items: flex-start; /* Align items to the left within the flex container */
+    margin-right: 70vh;
+    margin-bottom: 13%;
+
 }
 
-.split-text1 span{
-    position: absolute;
-    display: block; 
-    width: 100%;
+.split-text1 {
+    display: block;
+}
+
+.split-text1 span {
+    display: block;
+}
+
+.blurred-background {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Light translucent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 8px; /* Optional: round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
 }
 
 
@@ -69,10 +90,10 @@
 
 
 
-.sub-changing{
+/* .sub-changing{
     white-space: nowrap;
     margin-right: 80vh;
-}
+} */
 
 
 
@@ -378,8 +399,8 @@
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
     /* background: var(--bs-primary); */
-    background: rgb(134, 133, 131) !important;
-    color: white !important;
+    background: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -389,8 +410,8 @@
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
     /* background: var(--bs-primary); */
     /* background: rgb(114, 113, 112); */
-    background: rgb(134, 133, 131) !important;
-    color: var(--bs-white);
+    background: rgb(255, 255, 255) !important;
+    color: var(--bs-dark);
     opacity: 1;
     border: 0;
     border-radius: 20px;
