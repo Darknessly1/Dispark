@@ -509,18 +509,15 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    /* background: var(--bs-primary); */
     background: rgb(255, 255, 255) !important;
     color: rgb(0, 0, 0) !important;
     border: 0;
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-    /* background: var(--bs-primary); */
-    /* background: rgb(114, 113, 112); */
     background: rgb(255, 255, 255) !important;
     color: var(--bs-dark);
     opacity: 1;
@@ -529,12 +526,11 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-    /* background: var(--bs-secondary); */
     background: black !important;
     color: var(--bs-white);
     border: 0;
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 20px;
 }
 
