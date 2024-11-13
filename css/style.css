@@ -3,6 +3,37 @@
 @tailwind utilities;
 
 
+/*** Start ***/
+
+
+
+/*** End ***/
+
+
+
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
 
 
 .test-img {
@@ -13,19 +44,21 @@
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
-    
-  }
+
+}
 
 
 /* 1 */
 .h1-container {
     position: absolute;
-    top: 20%; /* Position h1 at 20% from the top */
+    top: 20%;
+    /* Position h1 at 20% from the top */
     left: 50%;
-    transform: translateX(-50%); /* Center h1 horizontally */
+    transform: translateX(-50%);
+    /* Center h1 horizontally */
 }
 
-.changing{
+.changing {
     margin-right: 100vh;
     /* margin-bottom: 20%; */
     /* bottom: 60%; */
@@ -39,11 +72,15 @@
 .sub-changing3 {
     position: absolute;
     bottom: 10%;
-    right: 5%; /* Adjust right value as needed */
+    right: 5%;
+    /* Adjust right value as needed */
     white-space: nowrap;
-    display: flex; /* Use flexbox to align items horizontally */
-    flex-direction: column; /* Stack the paragraph and buttons vertically */
-    align-items: flex-start; /* Align items to the left within the flex container */
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    flex-direction: column;
+    /* Stack the paragraph and buttons vertically */
+    align-items: flex-start;
+    /* Align items to the left within the flex container */
     margin-right: 70vh;
     margin-bottom: 13%;
 
@@ -59,12 +96,35 @@
 
 .blurred-background {
     position: relative;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3); /* Light translucent background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    border-radius: 8px; /* Optional: round corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+    margin-bottom: 80px;
+    padding: 70px;
+    max-height: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Light translucent background */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    border-radius: 8px;
+    /* Optional: round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: add a shadow */
+}
+
+.blurred-background1 {
+    position: absolute;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    padding: 70px;
+    top: 25%;
+    left: 12%;
+    max-height: 100%;
+    background-color: rgba(97, 80, 80, 0.3);
+    /* Light translucent background */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    border-radius: 8px;
+    /* Optional: round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: add a shadow */
 }
 
 
@@ -81,14 +141,14 @@
 
 
 /* 4 */
-.changing2{
+.changing2 {
     position: absolute;
-    top: 20%;
+    top: 60%;
     right: 40%;
     white-space: nowrap;
 }
 
-.sub-changing2{
+.sub-changing2 {
     position: absolute;
     bottom: 10%;
     right: 40%;
@@ -96,8 +156,10 @@
 }
 
 .split-text span {
-    display: block; /* Places each span on a new line */
-    width: 100%;    /* Ensures each span takes full width of the parent */
+    display: block;
+    /* Places each span on a new line */
+    width: 100%;
+    /* Ensures each span takes full width of the parent */
 }
 
 
@@ -109,11 +171,11 @@
 } */
 
 
-.testbg{
+.testbg {
     color: rgb(145, 141, 136) !important;
 }
 
-.testbg1{
+.testbg1 {
     color: rgb(250, 248, 248);
 }
 
@@ -133,45 +195,59 @@
 
 .partners {
     padding: 10px;
-  }
-  
-  @-webkit-keyframes slideleft {
+}
+
+@-webkit-keyframes slideleft {
     0% {
-      background-position: 385000px;
+        background-position: 385000px;
     }
+
     100% {
-      background-position: 0;
+        background-position: 0;
     }
-  }
-  
-  @keyframes slideleft {
+}
+
+@keyframes slideleft {
     0% {
-      background-position: 385000px;
+        background-position: 385000px;
     }
+
     100% {
-      background-position: 0;
+        background-position: 0;
     }
-  }
-  
-  .partners-img-container {
+}
+
+.partners-img-container {
     height: 100px;
     width: 100%;
     overflow: auto;
-  }
-  
-  .partners-img-container::-webkit-scrollbar { width: 0 !important } /* hide scrollbar in Chrome */
-  .partners-img-container { scrollbar-width: none; } /* hide scrollbar in mozilla */
-  .partners-img-container { -ms-overflow-style: none; } /* hide scrollbar in IE */
-  
-  .partners-img-container .partners-img {
+}
+
+.partners-img-container::-webkit-scrollbar {
+    width: 0 !important
+}
+
+/* hide scrollbar in Chrome */
+.partners-img-container {
+    scrollbar-width: none;
+}
+
+/* hide scrollbar in mozilla */
+.partners-img-container {
+    -ms-overflow-style: none;
+}
+
+/* hide scrollbar in IE */
+
+.partners-img-container .partners-img {
     height: 100%;
     width: 200%;
     background: transparent url(https://squeeze-pics.s3-us-west-2.amazonaws.com/v2/assets/Web+Assets/heroes/Auto-insurance/insurancelogos.jpg) repeat-x 50% 0;
     -webkit-animation: slideleft 5000s linear infinite;
     animation: slideleft 5000s linear infinite;
     cursor: grab;
-  }
-  
+}
+
 
 
 /*** Spinner Start ***/
@@ -322,7 +398,7 @@
         opacity: 0;
     }
 
-    .navbar .nav-item:hover > .dropdown-menu {
+    .navbar .nav-item:hover>.dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
         transition: .5s;
@@ -348,9 +424,9 @@
     opacity: 1;
 }
 
-.font-class{
+.font-class {
     /* margin: 20%; */
-    color: black !important; 
+    color: black !important;
 }
 
 /*** Navbar End ***/
@@ -398,7 +474,6 @@
 }
 
 .carousel-control-prev:hover {
-    /* background: var(--bs-secondary); */
     background: rgb(141, 137, 137) !important;
     transition: .8s;
 }
@@ -409,7 +484,6 @@
     position: absolute;
     top: 50%;
     right: 0;
-    /* background: var(--bs-primary); */
     background: black;
     border-radius: 50px 0 0 50px;
     opacity: 1;
@@ -421,9 +495,7 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    /* background: var(--bs-secondary); */
     background: black;
-    /* color: var(--bs-dark); */
     color: white;
     opacity: 1;
     border: 0;
@@ -547,32 +619,43 @@ article {
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-  }
-  
-  article a::after {
+}
+
+article a::after {
     position: absolute;
     inset-block: 0;
     inset-inline: 0;
     cursor: pointer;
     content: "";
-  }
-  
-  /* basic article elements styling */
-  article h2 {
+}
+
+/* basic article elements styling */
+article h2 {
     margin: 0 0 18px 0;
     font-family: "Bebas Neue", cursive;
     font-size: 1.9rem;
     letter-spacing: 0.06em;
     color: var(--title-color);
     transition: color 0.3s ease-out;
-  }
-  
-  figure {
+}
+
+
+figure {
     aspect-ratio: 4 / 4;
     overflow: hidden;
-  }
-  
-  article img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+article img {
     display: flex;
     object-fit: cover;
     max-width: 100%;
@@ -580,24 +663,24 @@ article {
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
-  }
-  
-  .article-body {
+}
+
+.article-body {
     padding: 24px;
-  }
-  
-  article a {
+}
+
+article a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: #28666e;
-  }
-  
-  article a:focus {
+}
+
+article a:focus {
     outline: 1px dotted #28666e;
-  }
-  
-  article a .icon {
+}
+
+article a .icon {
     min-width: 24px;
     width: 24px;
     height: 24px;
@@ -605,29 +688,29 @@ article {
     transform: translateX(var(--link-icon-translate));
     opacity: var(--link-icon-opacity);
     transition: all 0.3s;
-  }
-  
-  /* using the has() relational pseudo selector to update our custom properties */
-  article:has(:hover, :focus) {
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
     --img-scale: 1.1;
     --title-color: #28666e;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-  
-  
-  /************************ 
+}
+
+
+/************************ 
   Generic layout (demo looks)
   **************************/
-  
-  *,
-  *::before,
-  *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  
-  /* body {
+}
+
+/* body {
     margin: 0;
     padding: 48px 0;
     font-family: "Figtree", sans-serif;
@@ -636,55 +719,59 @@ article {
     background-image: linear-gradient(45deg, #7c9885, #b5b682);
     min-height: 100vh;
   } */
-  
-  .articles {
+
+.articles {
     display: grid;
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
-  }
-  
-  @media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 960px) {
     article {
-      container: card/inline-size;
+        container: card/inline-size;
     }
+
     .article-body p {
-      display: none;
+        display: none;
     }
-  }
-  
-  @container card (min-width: 380px) {
+}
+
+@container card (min-width: 380px) {
     .article-wrapper {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 16px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
     }
+
     .article-body {
-      padding-left: 0;
+        padding-left: 0;
     }
+
     figure {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
+
     figure img {
-      height: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
     }
-  }
-  
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
     position: absolute;
-    white-space: nowrap; 
+    white-space: nowrap;
     width: 1px;
-  }
+}
 
 /***  end of section***/
 
@@ -820,8 +907,7 @@ article {
 
 
 /*** Blog Start ***/
-.blog-item 
-.blog-btn {
+.blog-item .blog-btn {
     z-index: 2;
     /* background: #c9791e; */
 }
@@ -1019,11 +1105,11 @@ article {
 }
 
 .contact-map {
-    background: #757371;
+    /* background: #757371; */
 }
 
 .contact-form {
-    background: #757371;
+    /* background: #757371; */
 }
 
 /*** Contact End ***/
