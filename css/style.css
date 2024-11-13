@@ -143,7 +143,13 @@
 /* 4 */
 .changing2 {
     position: absolute;
-    top: 60%;
+    top: 20%;
+    right: 40%;
+    white-space: nowrap;
+}
+.changing2n {
+    position: absolute;
+    top: 50%;
     right: 40%;
     white-space: nowrap;
 }
