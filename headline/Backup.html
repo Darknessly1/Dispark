@@ -167,7 +167,9 @@
 
     <!-- start -->
 
-    <div class="container-fluid px-0 py-0">
+    <div class="container-fluid px-4 py-2"
+        style="height: 400px;"
+    >
 
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
@@ -177,7 +179,7 @@
                 <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="third slide"></li>
                 <!-- <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="third slide"></li> -->
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner rounded-3xl" role="listbox">
 
                 <!-- 3 -->
                 <div class="carousel-item active">
@@ -212,38 +214,33 @@
     
     <div class="main">
         <ul class="cards">
+            <!-- Veeam Backup Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
-                        <img src="/all/img0.webp"
-                            alt="mixed vegetable salad in a mason jar." />
-                        <span class="card_price"><span>$</span>199.99</span>
+                        <img src="/all/img0.webp" alt="mixed vegetable salad in a mason jar." />
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
-                        <h2 class="card_title">Veeame Backup</h2>
+                        <h2 class="card_title">Veeam Backup</h2>
                         <div class="card_text">
                             <p><strong>Veeam Backup:</strong> Veeam delivers enterprise-grade data protection, enabling fast recovery, automated backups, and ransomware defense for various environments.</p>
                         </div>
-                    </div>
-                    <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
-                        Buy Now
-                    </button>
-                </div>
-            </li>
-
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <span class="note">Data Management Systems</span>
-                        <img src="/all/img17.jpg"
-                            alt="a Reuben sandwich on wax paper." />
-                        <span class="card_price"><span>$</span>150.00</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Qnap</h2>
-                        <div class="card_text">
-                            <p><strong>QNAP:</strong> QNAP offers advanced NAS solutions with hybrid cloud backup, file sharing, and virtualization support, making it a reliable disaster recovery tool.</p>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>49.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>19.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>29.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
@@ -251,19 +248,69 @@
                     </button>
                 </div>
             </li>
-
+    
+            <!-- QNAP Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Data Management Systems</span>
-                        <img src="/all/img15.webp"
-                            alt="A side view of a plate of figs and berries." />
-                        <span class="card_price"><span>$</span>198.99</span>
+                        <img src="/all/img17.jpg" alt="a Reuben sandwich on wax paper." />
+                        <span class="card_price"><span></span>Hardware</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">QNAP</h2>
+                        <div class="card_text">
+                            <p><strong>QNAP:</strong> QNAP offers advanced NAS solutions with hybrid cloud backup, file sharing, and virtualization support, making it a reliable disaster recovery tool.</p>
+                        </div>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>59.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>24.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>39.99/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
+                        Buy Now
+                    </button>
+                </div>
+            </li>
+    
+            <!-- Synology Card -->
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <span class="note">Data Management Systems</span>
+                        <img src="/all/img15.webp" alt="A side view of a plate of figs and berries." />
+                        <span class="card_price"><span></span>Hardware</span>
                     </div>
                     <div class="card_content">
                         <h2 class="card_title">Synology</h2>
                         <div class="card_text">
                             <p><strong>Synology:</strong> Synology provides NAS devices with tools for centralized storage, automated backups, and remote access. Ideal for both home and business use.</p>
+                        </div>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>54.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>29.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>34.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
@@ -273,6 +320,7 @@
             </li>
         </ul>
     </div>
+    
 
     <!-- End  -->
 

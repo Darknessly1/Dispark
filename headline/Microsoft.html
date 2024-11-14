@@ -166,16 +166,17 @@
     <!-- Navbar End -->
 
     <!-- start -->
-    <div class="container-fluid px-0 py-0">
+    <div class="container-fluid px-4 py-2" style="height: 400px;">
 
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="third slide"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner rounded-3xl" role="listbox">
                 <!-- 4 -->
                 <div class="carousel-item active">
-                    <img src="/imges/img792.jpg" class="img-fluid" alt="Second slide" style="height: 120vh; width: 100%;">
+                    <img src="/imges/img792.jpg" class="img-fluid" alt="Second slide"
+                        style="height: 120vh; width: 100%;">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <div class="blurred-background">
@@ -183,7 +184,9 @@
                                     Microsoft Programs
                                 </h1>
                                 <p class="mb-4 text-black font-bold fs-5 animated fadeInDown">
-                                    Welcome to Microsoft, your hub for innovation, productivity, and connection. Explore cutting-edge technology, empowering tools, and solutions designed to help you achieve more at home, work, and beyond.
+                                    Welcome to Dispark, your hub for innovation, productivity, and connection. Explore
+                                    cutting-edge technology, empowering tools, and solutions designed to help you
+                                    achieve more at home, work, and beyond.
                                 </p>
                             </div>
                             <!-- <a href="" class="me-2">
@@ -224,12 +227,13 @@
 
     <div class="main">
         <ul class="cards">
+            <!-- Windows 10 Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
                         <img src="/all/img4.jpg" alt="mixed vegetable salad in a mason jar." />
-                        <span class="card_price"><span>$</span>199.99</span>
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
                         <h2 class="card_title">Windows 10</h2>
@@ -237,20 +241,35 @@
                             <p><strong>Windows 10:</strong> A user-friendly OS known for its robust security tools,
                                 compatibility, and versatility across personal and professional applications.</p>
                         </div>
+                        <!-- Sub-card for Pricing Plans -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>49.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>19.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>29.99/month</p>
+                            </div>
+                        </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
                         Buy Now
                     </button>
                 </div>
-                
             </li>
 
+            <!-- Microsoft Office 365 Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
                         <img src="/all/img1.jpg" alt="a Reuben sandwich on wax paper." />
-                        <span class="card_price"><span>$</span>150.00</span>
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
                         <h2 class="card_title">Microsoft Office 365</h2>
@@ -258,36 +277,67 @@
                             <p><strong>Microsoft Office 365:</strong> A cloud-based productivity suite featuring tools
                                 like Word, Excel, and Teams, offering seamless collaboration and file sharing.</p>
                         </div>
-                    </div>
-                    <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
-                        Buy Now
-                    </button
-                </div>
-                
-            </li>
-
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <span class="note">Premium</span>
-                        <img src="/all/img20.jpg" alt="A side view of a plate of figs and berries." />
-                        <span class="card_price"><span>$</span>198.99</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Windows 11</h2>
-                        <div class="card_text">
-                            <p><strong>Windows 11:</strong> A modern OS with an updated interface, enhanced
-                                multitasking, and gaming features, built for productivity and entertainment.</p>
+                        <!-- Sub-card for Pricing Plans -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>39.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>14.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>24.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
                         Buy Now
                     </button>
                 </div>
-                
+            </li>
+
+            <!-- Windows 11 Card -->
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <span class="note">Premium</span>
+                        <img src="/all/img20.jpg" alt="A side view of a plate of figs and berries." />
+                        <span class="card_price"><span></span>Package</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Windows 11</h2>
+                        <div class="card_text">
+                            <p><strong>Windows 11:</strong> A modern OS with an updated interface, enhanced
+                                multitasking,
+                                and gaming features, built for productivity and entertainment.</p>
+                        </div>
+                        <!-- Sub-card for Pricing Plans -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>59.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>24.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>34.99/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
+                        Buy Now
+                    </button>
+                </div>
             </li>
         </ul>
     </div>
+
 
     <!-- End  -->
 

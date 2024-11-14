@@ -167,38 +167,40 @@
 
     <!-- start -->
 
-    <div class="container-fluid px-0 py-0">
+    <div class="container-fluid px-4 py-2" 
+        style="height: 400px;"
+    >
 
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner rounded-3xl" role="listbox">
 
                 <!-- 2 -->
                 <div class="carousel-item active">
-                    <img src="/imges/imgs2.jpeg" class="img-fluid" alt="Second slide" style="height: 100vh; width: 100%;">
+                    <img src="/imges/imgs2.jpeg" class="img-fluid" alt="Second slide"
+                        style="height: 100vh; width: 100%;">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <h1 class=" text-white display-1 mb-4 animated fadeInLeft changing2n">
                                 Ant-iVirus Software
                             </h1>
 
-                            <div class="sub-changing2">
+                            <!-- <div class="sub-changing2n">
                                 <p class="mb-4 text-white font-bold fs-5 animated fadeInDown split-text">
                                     <span> Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
                                     </span>
                                     <span> Pellentesque aliquam dolor eget urna ultricies tincidunt. </span>
                                 </p>
-                                
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
 
 
             </div>
-            
+
         </div>
     </div>
 
@@ -211,23 +213,39 @@
     <!-- Start -->
 
     <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px; margin-top: 40px;">
-        <h5 class="testbg text-6xl">Anti Viruses Products</h5>
+        <h5 class="testbg text-6xl"></h5>
     </div>
-    
+
     <div class="main">
         <ul class="cards">
+            <!-- Kaspersky Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
-                        <img src="/all/img6.jpg"
-                            alt="mixed vegetable salad in a mason jar." />
-                        <span class="card_price"><span>$</span>199.99</span>
+                        <img src="/all/img6.jpg" alt="mixed vegetable salad in a mason jar." />
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
-                        <h2 class="card_title">Kaspersiky</h2>
+                        <h2 class="card_title">Kaspersky</h2>
                         <div class="card_text">
-                            <p><strong>Kaspersky:</strong> A trusted antivirus solution offering real-time malware protection, internet security, and parental controls for personal and business use.</p>
+                            <p><strong>Kaspersky:</strong> A trusted antivirus solution offering real-time malware
+                                protection, internet security, and parental controls for personal and business use.</p>
+                        </div>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>29.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>9.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>19.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
@@ -236,18 +254,34 @@
                 </div>
             </li>
 
+            <!-- Symantec Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
-                        <img src="/all/img9.jpg"
-                            alt="a Reuben sandwich on wax paper." />
-                        <span class="card_price"><span>$</span>150.00</span>
+                        <img src="/all/img9.jpg" alt="a Reuben sandwich on wax paper." />
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
-                        <h2 class="card_title">Symontic</h2>
+                        <h2 class="card_title">Symantec</h2>
                         <div class="card_text">
-                            <p><strong>Symantec:</strong> Enterprise-grade security software with endpoint protection and data encryption, perfect for safeguarding business data.</p>
+                            <p><strong>Symantec:</strong> Enterprise-grade security software with endpoint protection
+                                and data encryption, perfect for safeguarding business data.</p>
+                        </div>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>39.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>19.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>29.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
@@ -256,18 +290,34 @@
                 </div>
             </li>
 
+            <!-- ESET Card -->
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
                         <span class="note">Premium</span>
-                        <img src="/all/img11.webp"
-                            alt="A side view of a plate of figs and berries." />
-                        <span class="card_price"><span>$</span>198.99</span>
+                        <img src="/all/img11.webp" alt="A side view of a plate of figs and berries." />
+                        <span class="card_price"><span></span>Package</span>
                     </div>
                     <div class="card_content">
-                        <h2 class="card_title">Eset</h2>
+                        <h2 class="card_title">ESET</h2>
                         <div class="card_text">
-                            <p><strong>ESET:</strong> Lightweight antivirus with robust anti-malware features, phishing protection, and multi-platform compatibility for home and enterprise users.</p>
+                            <p><strong>ESET:</strong> Lightweight antivirus with robust anti-malware features, phishing
+                                protection, and multi-platform compatibility for home and enterprise users.</p>
+                        </div>
+                        <!-- Sub-card for pricing -->
+                        <div class="sub_cards">
+                            <div class="sub_card">
+                                <h3>Business</h3>
+                                <p><span>$</span>24.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Student</h3>
+                                <p><span>$</span>14.99/month</p>
+                            </div>
+                            <div class="sub_card">
+                                <h3>Personal</h3>
+                                <p><span>$</span>19.99/month</p>
+                            </div>
                         </div>
                     </div>
                     <button class="border-2 border-black ml-20 mr-20 p-2 mb-4 rounded-2xl bg-green-500 text-white">
@@ -277,6 +327,7 @@
             </li>
         </ul>
     </div>
+
 
     <!-- End  -->
 
