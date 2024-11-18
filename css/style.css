@@ -3,6 +3,49 @@
 @tailwind utilities;
 
 
+
+/* Ensuring all images in the carousel take the same height and width */
+.fixed-size {
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    height: 700px; /* Set the height to match the first image */
+    width: 100%; /* Ensures the width is always 100% of the container */
+}
+
+.carousel-caption {
+    position: relative; /* Make sure the carousel-caption is the reference for absolute positioning */
+    font: bold;
+    max-width: 80%; /* Prevent text from spanning too wide */
+}
+
+.fixed-position {
+    position: absolute; /* Position the <p> tag at the bottom of the carousel-caption */
+    bottom: 10px; /* Adjust this to move the <p> tag 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure it's centered */
+    z-index: 10; /* Ensure the <p> tag stays above other content */
+    margin-bottom: 0; /* Reset margin if necessary */
+}
+
+
+
+.carousel-caption p{
+    top: 30%;
+}
+
+
+.carousel-item img {
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    height: 500px; /* Set all images to the same height */
+    width: 100%; /* Ensure they cover the full width */
+}   
+
+.move-down {
+    position: absolute;
+    bottom: 20%; /* Move the <p> tag 10% from the bottom of its container */
+}
+
+
+
 /*** Start ***/
 .sub_cards {
     display: flex;
@@ -59,12 +102,9 @@
 }
 
 
-
 .test-img {
     display: flex;
     object-fit: cover;
-    /* max-width: 100%; */
-    /* max-height: 100%; */
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
@@ -95,7 +135,7 @@
 
 .sub-changing3 {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 5%;
     /* Adjust right value as needed */
     white-space: nowrap;
@@ -144,7 +184,8 @@
     border: none;
     border-radius: 8px;
     background: linear-gradient(90deg, #333333, #666666);
-    color: #000; /* Initial text color */
+    color: #000;
+    /* Initial text color */
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -153,8 +194,10 @@
 /* Hover effect */
 .back-button:hover {
     background: linear-gradient(90deg, #666666, #333333);
-    color: #fff; /* Change text color on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    color: #fff;
+    /* Change text color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
 }
 
 /* Focus effect */
@@ -175,9 +218,9 @@
 
 .blurred-background {
     position: relative;
-    margin-bottom: 80px;
-    padding: 70px;
-    max-height: 80%;
+    margin-bottom: 30%;
+    padding: 40px;
+    max-height: 40%;
     background-color: rgba(255, 255, 255, 0.3);
     /* Light translucent background */
     backdrop-filter: blur(10px);
@@ -222,10 +265,11 @@
 /* 4 */
 .changing2 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 40%;
     white-space: nowrap;
 }
+
 .changing2n {
     position: absolute;
     top: 50%;
