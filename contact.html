@@ -128,10 +128,9 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solution</a>
                             <div class="dropdown-menu rounded">
-                                <a href="blog.html" class="dropdown-item">Loge1</a>
-                                <a href="team.html" class="dropdown-item">Loge2</a>
-                                <a href="testimonial.html" class="dropdown-item">Loge3</a>
-                                <a href="404.html" class="dropdown-item">Loge4</a>
+                                <a href="./loge1.html" class="dropdown-item">Loge1</a>
+                                <a href="./loge2.html" class="dropdown-item">Loge2</a>
+                                <a href="./loge3.html" class="dropdown-item">Loge3</a>
                             </div>
                         </div>
 
@@ -237,7 +236,7 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s" action="http://localhost:9000/contact">
                         <form id="contactForm" method="post">
                             <div class="mb-4">
                                 <input type="text" name="name" class="form-control py-3 border-2 border-black rounded-xl"
@@ -380,13 +379,13 @@
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the form from reloading the page
-        
-            const formData = new FormData(this); // Collect form data
-        
-            fetch('http://localhost:3000/contact', {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('http://localhost:9000/contact', {
                 method: 'POST',
-                body: formData, // Send the form data to the backend
+                body: formData,
             })
                 .then(response => {
                     if (response.ok) {
@@ -398,14 +397,14 @@
                 .then(data => {
                     document.getElementById('responseMessage').innerText = 'Message sent successfully!';
                     document.getElementById('responseMessage').classList.add('text-success');
-                    document.getElementById('contactForm').reset(); // Reset the form
+                    document.getElementById('contactForm').reset();
                 })
                 .catch(error => {
                     document.getElementById('responseMessage').innerText = 'Error: ' + error.message;
                     document.getElementById('responseMessage').classList.add('text-danger');
                 });
         });
-        
+
     </script>
 
 </body>
