@@ -176,12 +176,9 @@
                 <div class="carousel-item active">
                     <img src="./bg/img23.jpg" class="img-fluid background-blur fixed-size" alt="First slide">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-black display-1 mb-4 animated fadeInRight blurred-background1">Adobe
-                            And More</h1>
+                        <h1 class="text-black display-1 mb-4 animated fadeInRight blurred-background1">Adobe And More</h1>
                         <p class="text-black font-bold fs-5 animated fadeInDown blurred-background1 fixed-position">
-                            The is the more Adobe thing you'll see, multi product key. Also, you'll see the production
-                            key with multiple plans.
-                        </p>
+                            Libérez votre créativité avec les outils incontournables d'Adobe pour le design, la photographie, le montage vidéo et l'art numérique. Transformez vos idées en œuvres spectaculaires.                        </p>
                     </div>
                 </div>
 
@@ -190,11 +187,10 @@
                     <img src="bg/img16.jpg" class="img-fluid fixed-size" alt="Second slide">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h1 class="text-white display-1 mb-4 animated fadeInRight blurred-background1">
-                            Anti-Virus</h1>
+                            Anti-Virus
+                        </h1>
                         <p class="mb-4 text-black font-bold fs-5 animated fadeInDown blurred-background fixed-position">
-                            The is the more Adobe thing you'll see, multi product key. Also, you'll see the production
-                            key with multiple plans.
-                        </p>
+                            Assurez la sécurité de vos appareils grâce à des logiciels antivirus puissants, offrant une protection robuste contre les virus, malwares et menaces en ligne.                        </p>
                     </div>
                 </div>
 
@@ -205,9 +201,7 @@
                         <h1 class="text-white display-1 mb-4 animated fadeInLeft blurred-background1">Backup
                             Software</h1>
                         <p class="mb-4 text-black font-bold fs-5 animated fadeInDown blurred-background fixed-position">
-                            Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam
-                            dolor eget urna ultricies tincidunt.
-                        </p>
+                            Protégez vos données avec des logiciels de sauvegarde fiables, garantissant la sécurité et la récupération facile de vos fichiers en toutes circonstances.                        </p>
                     </div>
                 </div>
 
@@ -218,9 +212,7 @@
                         <h1 class="text-black display-1 mb-4 animated fadeInLeft blurred-background1">
                             Microsoft Programs</h1>
                         <p class="mb-4 text-black font-bold fs-5 animated fadeInDown blurred-background fixed-position">
-                            Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam
-                            dolor eget urna ultricies tincidunt.
-                        </p>
+                            Découvrez l'innovation et la productivité avec les logiciels et services de pointe de Microsoft, comme Windows, Office et des solutions cloud performantes.                        </p>
                     </div>
                 </div>
             </div>
@@ -690,8 +682,9 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
+
                     <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                        <form id="contactForm" method="post" action="http://192.168.7.7:9000/contact">
+                        <form id="contactForm" method="post" action="http://192.168.7.7:9000/contact" novalidate>
                             <div class="mb-4">
                                 <input type="text" name="name"
                                     class="form-control py-3 border-2 border-black rounded-xl" placeholder="Your Name"
@@ -712,11 +705,12 @@
                                     placeholder="Message" required></textarea>
                             </div>
                             <div class="text-start">
-                                <button id="submitButton" class="btn bg-dark text-white py-1 px-3" type="submit">Send Message</button>
+                                <button id="submitButton" class="btn bg-dark text-white py-1 px-3" type="button">Send Message</button>
                             </div>
                         </form>
                         <div id="responseMessage" class="mt-3"></div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -858,20 +852,21 @@
                 });
         });
 
-        document.getElementById('contactForm').addEventListener('submit', async function (event) {
-            event.preventDefault(); // Prevent the default form submission
-            const submitButton = document.getElementById('submitButton');
+
+        document.getElementById('submitButton').addEventListener('click', async function () {
+            const form = document.getElementById('contactForm');
             const responseMessage = document.getElementById('responseMessage');
-            
+            const submitButton = document.getElementById('submitButton');
+    
             // Form validation
-            const inputs = this.querySelectorAll('input, textarea');
+            const inputs = form.querySelectorAll('input, textarea');
             let allFilled = true;
             inputs.forEach(input => {
                 if (!input.value.trim()) {
                     allFilled = false;
-                    input.style.border = '2px solid red'; // Highlight empty fields
+                    input.style.border = '2px solid red';
                 } else {
-                    input.style.border = '2px solid black'; // Reset valid fields
+                    input.style.border = '2px solid black';
                 }
             });
     
@@ -886,16 +881,16 @@
             submitButton.textContent = "Sending...";
     
             try {
-                const formData = new FormData(this);
-                const response = await fetch(this.action, {
-                    method: this.method,
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: form.method,
                     body: formData,
                 });
     
                 if (response.ok) {
                     responseMessage.textContent = "Message sent successfully!";
                     responseMessage.style.color = "green";
-                    this.reset(); // Clear the form on success
+                    form.reset();
                 } else {
                     responseMessage.textContent = "Failed to send the message.";
                     responseMessage.style.color = "red";
@@ -904,12 +899,10 @@
                 responseMessage.textContent = "An error occurred while sending the message.";
                 responseMessage.style.color = "red";
             } finally {
-                // Re-enable the button
                 submitButton.disabled = false;
                 submitButton.textContent = "Send Message";
             }
         });
-
     </script>
 </body>
 
